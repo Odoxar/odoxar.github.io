@@ -1,0 +1,133 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.graph {
+    width: 120px;
+    height: 60px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    line-height: 100px;
+    font-weight: 600;
+    border-radius: 110px 108px 0 0;
+    overflow: hidden;
+    color: #0ff;
+}
+.graph:before, .graph:after {
+    content: '';
+    width: 120px;
+    height: 60px;
+    border: 16px solid #0ff;
+    border-top: none;
+    position: absolute;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    border-radius: 0 0 100px 100px;
+    -webkit-animation: demo 2s;
+    animation: demo 2s;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+}
+.graph:after {
+    z-index: 3;
+    border-color: rgba(0, 0, 0, 0.15);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.graph:hover:before {
+    opacity: .8;
+    cursor: pointer;
+}
+.graph:hover + .tooltip {
+    bottom: 105%;
+    opacity: 1;
+}
+
+.multi-graph {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    margin: auto;
+    color: #fff;
+    font-size: 22px;
+    line-height: 280px;
+    font-weight: 600;
+}
+.multi-graph:before {
+    content: '';
+    width: 300px;
+    height: 150px;
+    border: 50px solid rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+    position: absolute;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    border-radius: 300px 300px 0 0;
+    left: 0;
+    top: 0;
+}
+.multi-graph .graph {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.multi-graph .graph:after {
+    background: #eee;
+    border: medium none;
+    border-radius: 2px;
+    color: #333;
+    font-weight: 200;
+    content: "" attr(data-name) "";
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    left: 50%;
+    line-height: 20px;
+    padding: 0 5px;
+    top: 50px;
+    z-index: 0;
+    -webkit-transform: rotate(0deg) translateX(-50%);
+    transform: rotate(0deg) translateX(-50%);
+    width: auto;
+    opacity: 0;
+}
+.multi-graph .graph:hover:after {
+    opacity: 1;
+    top: 70px;
+}
+
+section.model-2 .graph {
+    color: #2DABD8;
+}
+
+section.model-2 .graph:before {
+    -webkit-transform: rotate(130deg);
+    transform: rotate(130deg);
+    border-color: #2DABD8;
+}
+
+@-webkit-keyframes demo {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes demo {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
