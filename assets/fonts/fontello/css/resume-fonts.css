@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'resume-fonts';
-  src: url('../font/resume-fonts.eot?46865932');
-  src: url('../font/resume-fonts.eot?46865932#iefix') format('embedded-opentype'),
-       url('../font/resume-fonts.woff2?46865932') format('woff2'),
-       url('../font/resume-fonts.woff?46865932') format('woff'),
-       url('../font/resume-fonts.ttf?46865932') format('truetype'),
-       url('../font/resume-fonts.svg?46865932#resume-fonts') format('svg');
+  src: url('../font/resume-fonts.eot?56287735');
+  src: url('../font/resume-fonts.eot?56287735#iefix') format('embedded-opentype'),
+       url('../font/resume-fonts.woff2?56287735') format('woff2'),
+       url('../font/resume-fonts.woff?56287735') format('woff'),
+       url('../font/resume-fonts.ttf?56287735') format('truetype'),
+       url('../font/resume-fonts.svg?56287735#resume-fonts') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'resume-fonts';
-    src: url('../font/resume-fonts.svg?46865932#resume-fonts') format('svg');
+    src: url('../font/resume-fonts.svg?56287735#resume-fonts') format('svg');
   }
 }
 */
@@ -65,17 +65,20 @@
 .icon-print-1:before { content: '\e80d'; } /* '' */
 .icon-briefcase:before { content: '\e80e'; } /* '' */
 .icon-link-ext:before { content: '\f08e'; } /* '' */
+.icon-filter:before { content: '\f0b0'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
 .icon-doc-text:before { content: '\f0f6'; } /* '' */
 .icon-desktop:before { content: '\f108'; } /* '' */
 .icon-laptop:before { content: '\f109'; } /* '' */
 .icon-tablet:before { content: '\f10a'; } /* '' */
 .icon-mobile:before { content: '\f10b'; } /* '' */
 .icon-info:before { content: '\f129'; } /* '' */
+.icon-left:before { content: '\f177'; } /* '' */
 .icon-linux:before { content: '\f17c'; } /* '' */
 .icon-graduation-cap:before { content: '\f19d'; } /* '' */
 .icon-file-pdf:before { content: '\f1c1'; } /* '' */
 .icon-facebook:before { content: '\f300'; } /* '' */
-.icon-github-text:before { content: '\f307'; } /* '' */
+.icon-github:before { content: '\f307'; } /* '' */
 .icon-github-1:before { content: '\f308'; } /* '' */
 .icon-skype:before { content: '\f30b'; } /* '' */
 .icon-linkedin:before { content: '\f31a'; } /* '' */

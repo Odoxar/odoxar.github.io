@@ -14,7 +14,7 @@
     },
     {
       "uid": "24d1008bf15b6c02a5e7a6af026987dd",
-      "css": "github-text",
+      "css": "github",
       "code": 62215,
       "src": "brandico"
     },
@@ -148,6 +148,24 @@
       "uid": "0357f7abbc0babf43509669f332e41e6",
       "css": "mobile",
       "code": 61707,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f6d72aa5ef8e8f0e553012af9a29a87e",
+      "css": "left",
+      "code": 61815,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "559647a6f430b3aeadbecd67194451dd",
+      "css": "menu",
+      "code": 61641,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4109c474ff99cad28fd5a2c38af2ec6f",
+      "css": "filter",
+      "code": 61616,
       "src": "fontawesome"
     }
   ]
