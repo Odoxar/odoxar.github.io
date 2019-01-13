@@ -1,0 +1,489 @@
+<html lang="uk-ua">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fermenter status</title>
+
+
+  <link rel="stylesheet" href="../../css/style.css">
+  <script type="text/javascript" src="../../js/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="constuctor_header">
+    <h2 class="constructor_header_title">Конфігуратор котельної</h2>
+    <div class=" constructor__send-data" id="send-data">
+      <button class="btn send-data__btn constructor_label" id="send-data-btn">Відправити дані</button>
+    </div>
+  </div>
+  <a class="return__link" id="return__link-id">
+    <img class="return__link_image" src="../../images/arrow-back.svg" alt="">
+  </a>
+  <div id="container">
+    <img src="../../images/constructor/tank.svg" alt="" class="constuctor_image" id="tank">
+    <img src="../../images/constructor/electric_heater.svg" alt="" class="constuctor_image" id="electric_heater">
+    <img src="../../images/constructor/fancoil_main.svg" alt="" class="constuctor_image" id="fancoil_main">
+    <img src="../../images/constructor/fancoil_3way.svg" alt="" class="constuctor_image" id="fancoil_3way">
+    <img src="../../images/constructor/fireplace.svg" alt="" class="constuctor_image" id="fireplace">
+    <img src="../../images/constructor/gas_heater.svg" alt="" class="constuctor_image" id="gas_heater">
+    <img src="../../images/constructor/heat_pump.svg" alt="" class="constuctor_image" id="heat_pump">
+    <img src="../../images/constructor/hot_water_main.svg" alt="" class="constuctor_image" id="hot_water_main">
+    <img src="../../images/constructor/hot_water_3way.svg" alt="" class="constuctor_image" id="hot_water_3way">
+    <img src="../../images/constructor/radiator_main.svg" alt="" class="constuctor_image" id="radiator_main">
+    <img src="../../images/constructor/radiator_3way.svg" alt="" class="constuctor_image" id="radiator_3way">
+    <img src="../../images/constructor/sun_collector.svg" alt="" class="constuctor_image" id="sun_collector">
+    <img src="../../images/constructor/tank_bottom_sensor.svg" alt="" class="constuctor_image" id="tank_bottom_sensor">
+    <img src="../../images/constructor/tank_gvs.svg" alt="" class="constuctor_image" id="tank_gvs">
+    <img src="../../images/constructor/tank_gvs_heat.svg" alt="" class="constuctor_image" id="tank_gvs_heat">
+    <img src="../../images/constructor/tank_top_sensor.svg" alt="" class="constuctor_image" id="tank_top_sensor">
+    <img src="../../images/constructor/ten.svg" alt="" class="constuctor_image" id="ten">
+    <img src="../../images/constructor/warm_floor_main.svg" alt="" class="constuctor_image" id="warm_floor_main">
+    <img src="../../images/constructor/warm_floor_3way.svg" alt="" class="constuctor_image" id="warm_floor_3way">
+    <div class="constructor_label constructor_title" id="tank_label">Тепловий
+      <br>аккумулятор</div>
+    <div class="constructor_label constructor_title" id="gas_heater_label">Газовий
+      <br>котел</div>
+    <div class="constructor_label constructor_title" id="electric_heater_label">Електричний
+      <br>котел</div>
+    <div class="constructor_label constructor_title" id="heat_pump_label">Тепловий
+      <br>насос</div>
+    <div class="constructor_label constructor_title" id="fireplace_label">Камін
+      <br>
+    </div>
+    <div class="constructor_label constructor_title" id="fancoil_label">Система фанкойлів
+      <br>
+    </div>
+    <div class="constructor_label constructor_title" id="radiator_label">Система опалення
+      <br>
+    </div>
+    <div class="constructor_label constructor_title" id="warm_floor_label">Система теплої підлоги
+      <br>
+    </div>
+    <div class="constructor_label constructor_title" id="tank_gvs_heat_label">Нагрів ємнісного бойлеру
+      <br>
+    </div>
+    <div class="constructor_label constructor_title" id="tank_gvs_label">Ємнісний бойлер
+      <br>
+    </div>
+    <div class="constructor_label constructor_title" id="sun_collector_label">Сонячний коллектор
+      <br>
+    </div>
+    <div class="constructor_label constructor_title" id="hot_water_label">Гаряче водопостачання
+      <br>
+    </div>
+    <div class="constructor_label constructor_title" id="ten_label">ТЕН
+      <br>
+    </div>
+    <!-- <div class=" constructor__send-data" id="send-data">
+      <button class="btn send-data__btn constructor_label" id="send-data-btn">Відправити дані</button>
+    </div> -->
+    <div id='option_container'>
+      <div class='option_window' id='option_window_tank'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Тепловий аккумулятор</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="tank_top_sensor_setting" />
+              <span class="control__indicator"></span>
+              Датчик у верхній частині баку
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" disabled id="tank_middle_sensor_setting" />
+              <span class="control__indicator"></span>
+              Датчик у середній частині баку
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="tank_bottom_sensor_setting" />
+              <span class="control__indicator"></span>
+              Датчик у ніжній частині баку
+            </label>
+          </div>
+        </div>
+        <button class="save_button" id='tank_save'>Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_electric_heater'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Електричний котел</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="electric_heater_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати електричний котел
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control_number">
+              <input type="number" min="0" max="99" step="0.1" class='options_text_input' id="electric_heater_power" value='10.0' />
+              Потужність, кВт
+            </label>
+            <div class="options_text_description">(Перевірте, що дані вказані в одиницях виміру кВт)</div>
+          </div>
+        </div>
+        <button class="save_button" id='tank_save'>Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_gas_heater'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Газовий котел</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="gas_heater_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати газовий котел
+            </label>
+          </div>
+        </div>
+        <button class="save_button" id='tank_save'>Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_heat_pump'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Тепловий насос</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="heat_pump_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати тепловий насос
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="heat_pump_heat_mode" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Режим роботи: нагрів
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="heat_pump_cool_mode" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Режим роботи: охолодження
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control_number">
+              <input type="number" min="0" max="100" step="0.1" class='options_text_input' id="heat_pump_power" value='10.0' />
+              Потужність, кВт
+            </label>
+            <div class="options_text_description">(Перевірте, що дані вказані в одиницях виміру кВт)</div>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_fireplace'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Камін</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="fireplace_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати камін
+            </label>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_fancoil'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Контур фанкойлів</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="fancoil_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати контур фанкойлів
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="fancoil_3way_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Регулювання температури подачі
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control_number">
+              <input type="number" min="0" max="100" step="0.1" class='options_text_input' id="fancoil_pump_power" value='0.3' />
+              Потужність насосу, кВт
+            </label>
+            <div class="options_text_description">(Перевірте, що дані вказані в одиницях виміру кВт)</div>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_radiator'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Контур опалення</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="radiator_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати контур опалення
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="radiator_3way_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Регулювання температури подачі
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control_number">
+              <input type="number" min="0" max="100" step="0.1" class='options_text_input' id="radiator_pump_power" value='0.3' />
+              Потужність насосу, кВт
+            </label>
+            <div class="options_text_description">(Перевірте, що дані вказані в одиницях виміру кВт)</div>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_warm_floor'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Контур теплої підлоги</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="warm_floor_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати контур теплої підлоги
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="warm_floor_3way_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Регулювання температури подачі
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control_number">
+              <input type="number" min="0" max="100" step="0.1" class='options_text_input' id="warm_floor_pump_power" value='0.3' />
+              Потужність насосу, кВт
+            </label>
+            <div class="options_text_description">(Перевірте, що дані вказані в одиницях виміру кВт)</div>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_tank_gvs_heat'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Контур нагріву бойлеру</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="tank_gvs_heat_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати контур нагріву бойлеру
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control_number">
+              <input type="number" min="0" max="100" step="0.1" class='options_text_input' id="tank_gvs_heat_pump_power" value='0.3' />
+              Потужність насосу, кВт
+            </label>
+            <div class="options_text_description">(Перевірте, що дані вказані в одиницях виміру кВт)</div>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_tank_gvs'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Ємнісний бойлер</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="tank_gvs_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати ємнісний бойлер
+            </label>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_sun_collector'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Сонячний коллектор</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="sun_collector_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати сонячний коллектор
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control_number">
+              <input type="number" min="0" max="100" step="0.1" class='options_text_input' id="sun_collector_pump_power" value='0.3' />
+              Потужність насосу, кВт
+            </label>
+            <div class="options_text_description">(Перевірте, що дані вказані в одиницях виміру кВт)</div>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_ten'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Електричний нагрівач</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="ten_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати електричний нагрівач
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control_number">
+              <input type="number" min="0" max="100" step="0.1" class='options_text_input' id="ten_power" value='5' />
+              Потужність нагрівача, кВт
+            </label>
+            <div class="options_text_description">(Перевірте, що дані вказані в одиницях виміру кВт)</div>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_gvs'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='tank_options'>Гаряче водопостачання</span>
+          <span class='close_button'></span>
+        </div>
+        <div class="option">
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="gvs_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Додати контур ГВП
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control--checkbox">
+              <input type="checkbox" checked="checked" id="gvs_3way_exist" class="options_checkbox" />
+              <span class="control__indicator"></span>
+              Регулювання температури ГВП
+            </label>
+          </div>
+          <div class='option_row'>
+            <label class="control control_number">
+              <input type="number" min="0" max="100" step="0.1" class='options_text_input' id="gvs_pump_power" value='0.1' />
+              Потужність насосу, кВт
+            </label>
+            <div class="options_text_description">(Перевірте, що дані вказані в одиницях виміру кВт)</div>
+          </div>
+        </div>
+        <button class="save_button">Зберегти</button>
+      </div>
+
+      <div class='option_window' id='option_window_send-data'>
+        <div class="option_window_header">
+          <span class='option_window_title' id='send-data_options'>Дані для відправки</span>
+          <span class='close_button'></span>
+        </div>
+        <form class="save-data__form" id="save-data__form" name="formSendData" novalidate>
+          <div class="send-data__name">
+            <p class='send-data__option_name'>Прізвище Ім'я</p>
+            <input
+              name="formName"
+              id="send-data_name" class="send-data__option_value" type="text">
+            <span class="name_error error"></span>
+          </div>
+          <div class="send-data__phone">
+            <p class='send-data__option_name'>Телефон</p>
+            <input
+              name="formPhone"
+              type="tel"
+
+              id="send-data_phone"
+              class="send-data__option_value">
+            <span class="phone_error error"></span>
+          </div>
+          <div class="send-data__email">
+            <p
+              class='send-data__option_name'
+            >
+              Електронна пошта
+            </p>
+            <input
+              name="formEmail"
+              type="email"
+              id="send-data_email"
+              class="send-data__option_value">
+            <span class="email_error error"></span>
+          </div>
+          <div class="send-data__comments">
+            <p
+              class='send-data__option_name'
+            >
+              Коментарі
+            </p>
+            <textarea
+              id="send-data_comments"
+              class="send-data__option_value"
+            ></textarea>
+          </div>
+
+          <input type="submit" class="send-data_button" value="Відправити">
+        </form>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!--   <div id='config_line'>config line</div> -->
+
+  <script src="https://smtpjs.com/v2/smtp.js"></script>
+  <!-- <script src="../js/sockjs.min.js"></script> -->
+  <!--   <script type="text/javascript" src="../js/jquery.cookie.js"></script> -->
+
+  <script type="text/javascript" src="../../js/ferm_main.js"></script>
+
+</body>
+
+</html>
