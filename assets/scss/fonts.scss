@@ -1,0 +1,74 @@
+/* Webfont: Lato-Black */
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/assets/fonts/LatoBlack/Lato-Black.eot');
+  /* IE9 Compat Modes */
+  src: url('/assets/fonts/LatoBlack/Lato-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/LatoBlack/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+  url('/assets/fonts/LatoBlack/Lato-Black.woff') format('woff'), /* Modern Browsers */
+  url('/assets/fonts/LatoBlack/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Bold */
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/assets/fonts/LatoBold/Lato-Bold.eot');
+  /* IE9 Compat Modes */
+  src: url('/assets/fonts/LatoBold/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/LatoBold/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */
+  url('/assets/fonts/LatoBold/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+  url('/assets/fonts/LatoBold/Lato-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Medium */
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/assets/fonts/LatoMedium/Lato-Medium.eot');
+  /* IE9 Compat Modes */
+  src: url('/assets/fonts/LatoMedium/Lato-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/LatoMedium/Lato-Medium.woff2') format('woff2'), /* Modern Browsers */
+  url('/assets/fonts/LatoMedium/Lato-Medium.woff') format('woff'), /* Modern Browsers */
+  url('/assets/fonts/LatoMedium/Lato-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Regular */
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/assets/fonts/LatoRegular/Lato-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('/assets/fonts/LatoRegular/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/LatoRegular/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+  url('/assets/fonts/LatoRegular/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+  url('/assets/fonts/LatoRegular/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Lato-Semibold */
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/assets/fonts/LatoSemiBold/Lato-Semibold.eot');
+  /* IE9 Compat Modes */
+  src: url('/assets/fonts/LatoSemiBold/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/LatoSemiBold/Lato-Semibold.woff2') format('woff2'), /* Modern Browsers */
+  url('/assets/fonts/LatoSemiBold/Lato-Semibold.woff') format('woff'), /* Modern Browsers */
+  url('/assets/fonts/LatoSemiBold/Lato-Semibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}
