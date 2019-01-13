@@ -1,0 +1,36 @@
+$font-path: '/assets/fonts/';
+$font-path-gillsans: $font-path+'gillSans/';
+$font-path-avenirnext: $font-path+'avenirNext/';
+@font-face {
+  font-family: "gillSans";
+  src: url($font-path-gillsans + "GillSansBold.eot");
+  src: url($font-path-gillsans + "GillSansBold.eot?#iefix") format("embedded-opentype"), url($font-path-gillsans + "GillSansBold.woff2") format("woff2"), url($font-path-gillsans + "GillSansBold.woff") format("woff"), url($font-path-gillsans + "GillSansBold.svg#GillSansBold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-04F9;
+}
+
+@font-face {
+  font-family: 'avenirNext';
+  src: url($font-path-avenirnext + 'AvenirNext-DemiBold/AvenirNext-Demi.eot');
+  src: url($font-path-avenirnext + 'AvenirNext-DemiBold/AvenirNext-Demi.woff2') format('woff2'), url($font-path-avenirnext + 'AvenirNext-DemiBold/AvenirNext-Demi.woff') format('woff'), url($font-path-avenirnext + 'AvenirNext-DemiBold/AvenirNext-Demi.ttf') format('truetype'), url($font-path-avenirnext + 'AvenirNext-DemiBold/AvenirNext-Demi.svg#AvenirNext-Demi') format('svg'), url($font-path-avenirnext + 'AvenirNext-DemiBold/AvenirNext-Demi.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avenirNext';
+  src: url($font-path-avenirnext + 'AvenirNext-Medium/AvenirNext-Medium.eot');
+  src: url($font-path-avenirnext + 'AvenirNext-Medium/AvenirNext-Medium.woff2') format('woff2'), url($font-path-avenirnext + 'AvenirNext-Medium/AvenirNext-Medium.woff') format('woff'), url($font-path-avenirnext + 'AvenirNext-Medium/AvenirNext-Medium.ttf') format('truetype'), url($font-path-avenirnext + 'AvenirNext-Medium/AvenirNext-Medium.svg#AvenirNext-Medium') format('svg'), url($font-path-avenirnext + 'AvenirNext-Medium/AvenirNext-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avenirNext';
+  src: url($font-path-avenirnext + 'AvenirNext-Regular/AvenirNext-Regular.eot');
+  src: url($font-path-avenirnext + 'AvenirNext-Regular/AvenirNext-Regular.woff2') format('woff2'), url($font-path-avenirnext + 'AvenirNext-Regular/AvenirNext-Regular.woff') format('woff'), url($font-path-avenirnext + 'AvenirNext-Regular/AvenirNext-Regular.ttf') format('truetype'), url($font-path-avenirnext + 'AvenirNext-Regular/AvenirNext-Regular.svg#AvenirNext-Regular') format('svg'), url($font-path-avenirnext + 'AvenirNext-Regular/AvenirNext-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: 400;
+  font-style: normal;
+}

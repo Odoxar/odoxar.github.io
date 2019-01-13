@@ -1,0 +1,159 @@
+{
+  "menu": {
+    "home": "home",
+    "smartHouse": "smart house",
+    "climateControl": "climate control",
+    "projects": "projects",
+    "contacts": "contacts"
+  },
+  "main": {
+    "left": {
+      "title": "Smart House",
+      "description1":
+        "Make your house alive. Create a home of future. Organize intelligent management.",
+      "description2": "Enjoy the interaction with your home."
+    },
+    "right": {
+      "title": "Climate Control",
+      "description1": "Manage, set up, control the climate of your home from anywhere in the world.",
+      "description2": "Upgrade your already finished and outdated climatic solutions."
+    },
+    "sign-in": "Sign In"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "persons": {
+      "shelmuk": {
+        "name": "Yuriy Shelmuk",
+        "phone": "+38 (066) 494-66-18"
+      },
+      "veremchuk": {
+        "name": "Oleksandr Veremchuk",
+        "phone": "+38 (096) 972-91-75"
+      }
+    },
+    "workTime": {
+      "description": "Working hours:",
+      "hours": "8 AM - 8 PM"
+    }
+  },
+  "climate-control": {
+    "title": "Climate Control",
+    "description1":
+      "If you want to be able to manage the heat/cold supply system; flexibly adjust the boiler room to your individual needs; provide remote monitoring of the operations of systems, then our developments will help you with this. We are developing ready-made automation modules for the main decisions of the organization of heat/water supply. All you have to do is to choose a schema of the heat generator in the configurator and get a calculation from our engineer. The system can be installed in the existing boiler rooms, which are not equipped with automation to the extent that suits you.",
+    "description2":
+      "By ordering our equipment you get - professional chief-installation, software for management, a personal online cabinet to monitor the systems, considerable energy saving, as a result of a customized system of heat/water supply.",
+    "configurator": {
+      "description": "Put your data and we’ll come with our suggestions to you.",
+      "button": "configurator",
+      "href": "../../assets/constructor/html/eng/index.html"
+    },
+    "mobile-apps": {
+      "title": "Mobile Apps",
+      "description": "Available on the",
+      "app": "App Store",
+      "google": "Google Play"
+    }
+  },
+  "smart-house": {
+    "title": "Smart House",
+    "description1":
+      "Do you want to download free song for ipod? If so, reading this article could save you from getting in to a lot of trouble! Downloading music to your Ipod has more than one pitfall associated with it, and this article will tell you the best way to download free song for Ipod.",
+    "description2":
+      "An Ipod can easily become a vital part of your life. If you had thought about the possibility of carrying around a virtually unlimited supply of music ten years ago, it would have seemed a bit futuristic, but it has all happened, and now all we have to do when we get tired of our present music collection is download free song for Ipod. This could however, be the start of a few problems…",
+    "description3":
+      "Scenarios may be written and edited before or after you move in, when it becomes clear what operations you perform the most often and what exactly needs to be automated.",
+    "rows": {
+      "row1": {
+        "title": "Lighting control",
+        "description":
+          "Lighting control envisages connection of all lighting fixtures via impulse relays and controllers. If dimming is required, dimmers are used instead of impulse relays. It enables lighting control from a smartphone/tablet and allows to implement various scenarios, such as turning all lights off in a room, turning all lights off in the house, turning on certain fixtures by pressing one switch, and so on."
+      },
+      "row2": {
+        "title": "Climate control",
+        "description1":
+          "It envisages control of the entire climatic equipment (fan coils, convectors, warm floor, radiators, ventilation, coolers, etc.). Temperature in a room can be set from a smartphone/tablet and maintained throughout. The parameter fixation method depends on equipment. Other scenarios, such as, for instance, lowering temperature inside the house in the event of long absence, are also possible.",
+        "description2":
+          "The entire climatic equipment is connected into one system and functions in a synchronized mode according to a preset logic. For example, if comfortable temperature in a room can be achieved by warm floor only, convectors and fan coils won’t turn on and temperature in radiators will be lowered."
+      },
+      "row3": {
+        "title": "Window blind / curtain / drape / window control",
+        "description":
+          "Window blinds / curtains / drapes / windows may be controlled both from a smartphone and using physical buttons. Control can be done according to a scenario, for example, closing all drapes in the evening or when leaving the house. Control can be also automated using sensors, for example, drawing down blinds in a swimming pool to block direct sunlight."
+      },
+      "row4": {
+        "title": "Integration with security system",
+        "description1":
+          "Activating and deactivating security system in a building (or particular facilities). Sending alarm signals when sensors set off, integration with other systems.",
+        "description2":
+          "Example: turning on street lights when a street movement sensor sets off."
+      },
+      "row5": {
+        "title1": "Video surveillance",
+        "title2": "Door phone / gate / entrance",
+        "description1":
+          "A video surveillance system is considered part of a security system, but the smart house envisages integration of this system. Displaying image on a smartphone/tablet. The entire video is continuously recorded on a register to enable its subsequent viewing.",
+        "description2":
+          "Viewing video from the door phone, opening the entrance door, opening/closing the gate from a smartphone / tablet."
+      },
+      "row6": {
+        "title": "Multimedia system",
+        "description":
+          "Multimedia control depends on equipment type. Usually, it means controlling the home theater and acoustic systems in the house (built-in loudspeakers in the swimming pool, hamam room, kitchen, terrace, etc.)."
+      },
+      "row7": {
+        "title1": "Outdoor lighting control",
+        "title2": "Scenarios",
+        "description1":
+          "The same functional as indoor lighting control, with the only difference of controlling particular outdoor lighting groups.",
+        "description2":
+          "Scenarios help reduce amount of routine work and perform multifunctional operations by pressing a single button (on a smartphone/tablet or a physical button)."
+      }
+    },
+    "examples": {
+      "example1": {
+        "title": "Example 1.",
+        "subtitle": "After leaving the house, you press one button to:",
+        "list": {
+          "item1": "turn off the lights,",
+          "item2": "close the curtains,",
+          "item3": "turn off the music,",
+          "item4": "activate the house security system."
+        }
+      },
+      "example2": {
+        "title": "Example 2.",
+        "subtitle": "After waking up in the morning, you press one button to:",
+        "list": {
+          "item1": "open the curtains,",
+          "item2":
+            "turn on your favorite radio station in the room(s) you want,",
+          "item3": "ventilate the room(s) you want, etc."
+        }
+      }
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "items": {
+      "item1": {
+        "title": "Individual detached house, area 1000 m2.",
+        "subtitle": "Lisnyky Kyiv region, 2018",
+        "description": "Climate control, lighting, security and safety systems, multiroom. Integration of management with IOS devices."
+      },
+      "item2": {
+        "title": "Residential apartment, area 100 m2.",
+        "subtitle": "Kyiv, 2018",
+        "description": "Climate control, lighting, security and safety systems, multiroom. Integration of management with IOS devices."
+      }
+    }
+  },
+  "footer": {
+    "description": "© \"Homme\" Kyiv, 2014 -",
+    "right": "All rights reserved."
+  },
+  "pageNotFound": {
+    "title": "Oops, the page you're looking for doesn't exist.",
+    "btn": "go to main page"
+  }
+}
